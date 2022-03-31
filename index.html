@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+		<script src="https://unpkg.com/vue@3"></script>
+		<script src="app.js" async defer></script>
+	</head>
+	<body>
+		<h1>Event Binding</h1>
+		<section id="app">
+			<button v-on:click="increase1()">Increase1</button>
+			<button v-on:click="decrease1">Decrease1</button>
+			<button v-on:click="increase2(2)">Increase2</button>
+			<button v-on:click="decrease2(2)">Decrease2</button>
+			<button v-on:click="increase2(3)">Increase3</button>
+			<button v-on:click="decrease2(3)">Decrease3</button>
+			<p>Result1:{{counter1}}</p>
+			<br />
+		</section>
+	</body>
+</html>
